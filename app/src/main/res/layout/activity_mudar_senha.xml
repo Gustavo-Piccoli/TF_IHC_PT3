@@ -60,7 +60,7 @@
 
 
         <EditText
-            android:id="@+id/confirmar_senha"
+            android:id="@+id/confirmar_senha2"
             android:layout_width="300dp"
             android:layout_height="48dp"
             android:layout_gravity="center"
@@ -81,7 +81,7 @@
             app:layout_constraintTop_toBottomOf="@+id/texto_confirmar_senha" />
 
         <EditText
-            android:id="@+id/senha"
+            android:id="@+id/senha2"
             android:layout_width="300dp"
             android:layout_height="48dp"
             android:layout_gravity="center"

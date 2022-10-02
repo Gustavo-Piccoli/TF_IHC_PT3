@@ -20,7 +20,7 @@ public class login extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                String status_encomenda = "1";
+                /*String status_encomenda = getIntent().getStringExtra("status_encomenda");
                 String email = getIntent().getStringExtra("email");
                 String nome = getIntent().getStringExtra("nome");
                 String cpf = getIntent().getStringExtra("cpf");
@@ -31,7 +31,7 @@ public class login extends AppCompatActivity {
                 String endereco = getIntent().getStringExtra("endereco");
                 String complemento = getIntent().getStringExtra("complemento");
 
-                /*if(senha.length() >0)
+                if(senha.length() >0)
                 {
                     if (status_encomenda == "1")
                     {
@@ -80,6 +80,7 @@ public class login extends AppCompatActivity {
                     i.putExtra("complemento", complemento);
                     startActivity(i);
                 }*/
+
                 Intent i = new Intent(login.this, usuario_invalido.class);
                 startActivity(i);
             }

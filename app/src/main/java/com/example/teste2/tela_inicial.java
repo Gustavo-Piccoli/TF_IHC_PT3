@@ -13,8 +13,6 @@ public class tela_inicial extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_inicial);
 
-        //new CountDownTimer(3000,1000)
-
         new CountDownTimer(0000,1000)//APAGAR
         {
             @Override
@@ -22,8 +20,9 @@ public class tela_inicial extends AppCompatActivity {
             @Override
             public void onFinish()
             {
-                //String status_encomenda = "1";
-                String status_encomenda = getIntent().getStringExtra("status_encomenda");
+                String status_encomenda = "1";
+                //String status_encomenda = getIntent().getStringExtra("status_encomenda");
+
                 String email = getIntent().getStringExtra("email");
                 String nome = getIntent().getStringExtra("nome");
                 String cpf = getIntent().getStringExtra("cpf");
@@ -35,7 +34,6 @@ public class tela_inicial extends AppCompatActivity {
                 String complemento = getIntent().getStringExtra("complemento");
 
                 Intent i = new Intent(tela_inicial.this, login.class);
-                //MUDAR PARA XX PARA LOGIN
 
                 i.putExtra("status_encomenda", status_encomenda);
                 i.putExtra("email", email);

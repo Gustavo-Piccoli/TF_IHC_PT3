@@ -37,7 +37,7 @@ public class perfil extends AppCompatActivity {
                 String cidade = getIntent().getStringExtra("cidade");
                 String endereco = getIntent().getStringExtra("endereco");
                 String complemento = getIntent().getStringExtra("complemento");
-                if (status_encomenda == "1")
+                if (status_encomenda.equals("1"))
                 {
                     Intent i = new Intent(perfil.this, encomendas_cheio.class);
                     i.putExtra("status_encomenda", status_encomenda);

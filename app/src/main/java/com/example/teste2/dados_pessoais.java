@@ -46,7 +46,7 @@ public class dados_pessoais extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                if (status_encomenda == "1")
+                if (status_encomenda.equals("1"))
                 {
                     Intent i = new Intent(dados_pessoais.this, encomendas_cheio.class);
                     i.putExtra("status_encomenda", status_encomenda);
