@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnRegistrar2"
+        android:id="@+id/botao_duvidas"
         style="@style/Button.White"
         android:layout_width="300dp"
         android:layout_height="48dp"
@@ -40,7 +40,7 @@
 
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/botao_exemplo_encomenda"
         android:layout_width="322dp"
         android:layout_height="165dp"
         android:layout_marginTop="92dp"
@@ -61,7 +61,7 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/botao_encomenda"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="@drawable/mala"
@@ -97,7 +97,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/botao_perfil"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="@drawable/perfil"
