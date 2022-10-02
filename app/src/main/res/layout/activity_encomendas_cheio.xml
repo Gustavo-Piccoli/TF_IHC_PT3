@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".tela_inicial">
 
     <Button
         android:id="@+id/botao_duvidas"
         style="@style/Button.White"
         android:layout_width="300dp"
         android:layout_height="48dp"
-        android:layout_marginTop="412dp"
+        android:layout_marginTop="348dp"
         android:backgroundTint="#000000"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
@@ -61,7 +61,7 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <ImageButton
-        android:id="@+id/botao_encomenda"
+        android:id="@+id/imageButton3"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="@drawable/mala"
@@ -73,7 +73,7 @@
         app:layout_constraintVertical_bias="0.936" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:text="Encomendas"
@@ -97,7 +97,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/botao_perfil"
+        android:id="@+id/imageButton4"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="@drawable/perfil"

@@ -43,12 +43,13 @@ public class registrar2 extends AppCompatActivity
                         estado.equals("RO") || estado.equals("RR") || estado.equals("SC") ||
                         estado.equals("SP") || estado.equals("SE") || estado.equals("TO"))
                     {
-                        Intent i = new Intent(registrar2.this, encomendas_cheio.class);
-
+                        String status_encomenda = "1";
                         String email = getIntent().getStringExtra("email");
                         String nome = getIntent().getStringExtra("nome");
                         String cpf = getIntent().getStringExtra("cpf");
                         String senha = getIntent().getStringExtra("senha");
+                        Intent i = new Intent(registrar2.this, encomendas_cheio.class);
+                        i.putExtra("status_encomenda", status_encomenda);
                         i.putExtra("email", email);
                         i.putExtra("nome", nome);
                         i.putExtra("cpf", cpf);
