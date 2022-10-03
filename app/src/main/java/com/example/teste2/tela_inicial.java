@@ -13,7 +13,8 @@ public class tela_inicial extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_inicial);
 
-        new CountDownTimer(0000,1000)//APAGAR
+        new CountDownTimer(3000,1000)//APAGAR
+        //new CountDownTimer(0000,1000)
         {
             @Override
             public void onTick(long millisUntilFinished){}
