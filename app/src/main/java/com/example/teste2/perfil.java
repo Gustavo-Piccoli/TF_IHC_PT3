@@ -17,6 +17,17 @@ public class perfil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
 
+        String status_encomenda = getIntent().getStringExtra("status_encomenda");
+        String email = getIntent().getStringExtra("email");
+        String nome = getIntent().getStringExtra("nome");
+        String cpf = getIntent().getStringExtra("cpf");
+        String senha = getIntent().getStringExtra("senha");
+        String cep = getIntent().getStringExtra("cep");
+        String estado = getIntent().getStringExtra("estado");
+        String cidade = getIntent().getStringExtra("cidade");
+        String endereco = getIntent().getStringExtra("endereco");
+        String complemento = getIntent().getStringExtra("complemento");
+
         ImageButton botao_encomendas = (ImageButton) findViewById(R.id.imageButton3);
         Button botao_duvidas = (Button) findViewById(R.id.btnRegistrar3);
         Button botao_mudar_senha = (Button) findViewById(R.id.btnEntrar3);
@@ -27,16 +38,7 @@ public class perfil extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                String status_encomenda = getIntent().getStringExtra("status_encomenda");
-                String email = getIntent().getStringExtra("email");
-                String nome = getIntent().getStringExtra("nome");
-                String cpf = getIntent().getStringExtra("cpf");
-                String senha = getIntent().getStringExtra("senha");
-                String cep = getIntent().getStringExtra("cep");
-                String estado = getIntent().getStringExtra("estado");
-                String cidade = getIntent().getStringExtra("cidade");
-                String endereco = getIntent().getStringExtra("endereco");
-                String complemento = getIntent().getStringExtra("complemento");
+
                 if (status_encomenda.equals("1"))
                 {
                     Intent i = new Intent(perfil.this, encomendas_cheio.class);
@@ -73,16 +75,6 @@ public class perfil extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                String status_encomenda = getIntent().getStringExtra("status_encomenda");
-                String email = getIntent().getStringExtra("email");
-                String nome = getIntent().getStringExtra("nome");
-                String cpf = getIntent().getStringExtra("cpf");
-                String senha = getIntent().getStringExtra("senha");
-                String cep = getIntent().getStringExtra("cep");
-                String estado = getIntent().getStringExtra("estado");
-                String cidade = getIntent().getStringExtra("cidade");
-                String endereco = getIntent().getStringExtra("endereco");
-                String complemento = getIntent().getStringExtra("complemento");
                 Intent i = new Intent(perfil.this, duvidas.class);
                 i.putExtra("status_encomenda", status_encomenda);
                 i.putExtra("email", email);
@@ -101,16 +93,6 @@ public class perfil extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                String status_encomenda = getIntent().getStringExtra("status_encomenda");
-                String email = getIntent().getStringExtra("email");
-                String nome = getIntent().getStringExtra("nome");
-                String cpf = getIntent().getStringExtra("cpf");
-                String senha = getIntent().getStringExtra("senha");
-                String cep = getIntent().getStringExtra("cep");
-                String estado = getIntent().getStringExtra("estado");
-                String cidade = getIntent().getStringExtra("cidade");
-                String endereco = getIntent().getStringExtra("endereco");
-                String complemento = getIntent().getStringExtra("complemento");
                 Intent i = new Intent(perfil.this, mudar_senha.class);
                 i.putExtra("status_encomenda", status_encomenda);
                 i.putExtra("email", email);
@@ -129,16 +111,6 @@ public class perfil extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                String status_encomenda = getIntent().getStringExtra("status_encomenda");
-                String email = getIntent().getStringExtra("email");
-                String nome = getIntent().getStringExtra("nome");
-                String cpf = getIntent().getStringExtra("cpf");
-                String senha = getIntent().getStringExtra("senha");
-                String cep = getIntent().getStringExtra("cep");
-                String estado = getIntent().getStringExtra("estado");
-                String cidade = getIntent().getStringExtra("cidade");
-                String endereco = getIntent().getStringExtra("endereco");
-                String complemento = getIntent().getStringExtra("complemento");
                 Intent i = new Intent(perfil.this, dados_pessoais.class);
                 i.putExtra("status_encomenda", status_encomenda);
                 i.putExtra("email", email);
@@ -157,16 +129,6 @@ public class perfil extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                String status_encomenda = getIntent().getStringExtra("status_encomenda");
-                String email = getIntent().getStringExtra("email");
-                String nome = getIntent().getStringExtra("nome");
-                String cpf = getIntent().getStringExtra("cpf");
-                String senha = getIntent().getStringExtra("senha");
-                String cep = getIntent().getStringExtra("cep");
-                String estado = getIntent().getStringExtra("estado");
-                String cidade = getIntent().getStringExtra("cidade");
-                String endereco = getIntent().getStringExtra("endereco");
-                String complemento = getIntent().getStringExtra("complemento");
                 Intent i = new Intent(perfil.this, login.class);
                 i.putExtra("status_encomenda", status_encomenda);
                 i.putExtra("email", email);

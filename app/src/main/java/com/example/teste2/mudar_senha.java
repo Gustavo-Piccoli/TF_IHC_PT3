@@ -65,7 +65,6 @@ public class mudar_senha extends AppCompatActivity {
             }
         });
 
-
         Button botao_voltar = (Button) findViewById(R.id.btnEntrar5);
         botao_voltar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,13 +94,5 @@ public class mudar_senha extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
-
-
-
-
-
-
-
     }
 }
